@@ -1,0 +1,7 @@
+GET {{HOST}}:{{PORT}}/hello-world
+
+###
+GET {{HOST}}:{{PORT}}/hello-world-bean
+
+###
+GET {{HOST}}:{{PORT}}/hello-world/path-variable/Van

@@ -14,4 +14,6 @@
 
 - How are all jars available (Spring, Spring MVC, Jackson, Tomcat)
   - Starter Projects - Spring Boot Starter Web (spring-webmvc, spring-web, spring-boot-starter-tomcat, spring-boot-starter-json)
-  - 
+
+## Chrome extension
+- Talend API tester
