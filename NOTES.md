@@ -1,0 +1,17 @@
+# Notes
+
+## 1. Spring web
+- **DispatcherServlet** - Front Controller Pattern
+    - it would map the request to the right controller
+    - Auto Configuration (DispatcherServletAutoConfiguration)
+
+- How does an object get converted to JSON?
+  - @ResponseBody + JacksonHttpMessageConverters
+    - Auto Configuration (JacksonHttpMessageConvertersConfiguration)
+
+- Who is configuring error mapping?
+  - Auto Configuration(ErrorMvcAutoConfiguration)
+
+- How are all jars available (Spring, Spring MVC, Jackson, Tomcat)
+  - Starter Projects - Spring Boot Starter Web (spring-webmvc, spring-web, spring-boot-starter-tomcat, spring-boot-starter-json)
+  - 
