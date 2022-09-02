@@ -1,4 +1,4 @@
-package com.nhvanse.restfulwebservices.social;
+package com.nhvanse.restfulwebservices.social.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
