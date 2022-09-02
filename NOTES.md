@@ -21,5 +21,10 @@
       .path("/{id}")
       .buildAndExpand(savedUser.getId())
       .toUri();```
+
+- Handle exception
+  - `@ControllerAdvice` for class
+  - `@ExceptionHandler` for method
+  - read `ResponseEntityExceptionHandler`
 ## Chrome extension
 - Talend API tester
