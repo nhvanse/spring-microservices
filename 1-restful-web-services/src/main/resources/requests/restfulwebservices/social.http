@@ -11,6 +11,6 @@ Content-Type: application/json
 GET {{HOST}}:{{PORT}}/users
 
 ###
-GET {{HOST}}:{{PORT}}/users/1
+GET {{HOST}}:{{PORT}}/users/404
 
 
