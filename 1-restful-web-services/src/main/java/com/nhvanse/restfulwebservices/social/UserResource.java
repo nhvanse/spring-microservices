@@ -44,4 +44,9 @@ public class UserResource {
         // location will appear in response 's header
         return ResponseEntity.created(location).build();
     }
+
+    @DeleteMapping("/{id}")
+    public void deleteUser(@PathVariable long id) {
+        userDaoService.deleteById(id);
+    }
 }

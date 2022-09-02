@@ -14,3 +14,5 @@ GET {{HOST}}:{{PORT}}/users
 GET {{HOST}}:{{PORT}}/users/404
 
 
+###
+DELETE {{HOST}}:{{PORT}}/users/1
