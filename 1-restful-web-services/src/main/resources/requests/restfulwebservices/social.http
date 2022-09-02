@@ -1,0 +1,16 @@
+POST {{HOST}}:{{PORT}}/users
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "user test",
+  "birthDate": "1998-09-25"
+}
+
+###
+GET {{HOST}}:{{PORT}}/users
+
+###
+GET {{HOST}}:{{PORT}}/users/1
+
+

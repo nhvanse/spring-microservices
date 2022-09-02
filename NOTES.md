@@ -15,5 +15,11 @@
 - How are all jars available (Spring, Spring MVC, Jackson, Tomcat)
   - Starter Projects - Spring Boot Starter Web (spring-webmvc, spring-web, spring-boot-starter-tomcat, spring-boot-starter-json)
 
+- Build URI from current request, or servletMapping, or context
+  - User ServletUriComponentsBuilder
+    - Example: ```URI location = ServletUriComponentsBuilder.fromCurrentRequest()
+      .path("/{id}")
+      .buildAndExpand(savedUser.getId())
+      .toUri();```
 ## Chrome extension
 - Talend API tester
