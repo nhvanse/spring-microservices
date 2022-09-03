@@ -16,3 +16,7 @@ GET {{HOST}}:{{PORT}}/users/404
 
 ###
 DELETE {{HOST}}:{{PORT}}/users/1
+
+### Content Negotiation: XML
+GET {{HOST}}:{{PORT}}/users/1
+Accept: application/xml

@@ -26,5 +26,15 @@
   - `@ControllerAdvice` for class
   - `@ExceptionHandler` for method
   - read `ResponseEntityExceptionHandler`
+
+- Documentation
+  - springdoc
+
+- Content Negotiation
+  - Same Resource - Same URI. However, Different Representations
+  - Example: XML or JSON, English or Vietnamese
+  - Example: XML use dependency `jackson-dataformat-xml`
+
+
 ## Chrome extension
 - Talend API tester
