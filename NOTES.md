@@ -39,5 +39,17 @@
   - Accept-Language in Header
   - use `org.springframework.context.MessageSource`
   - to get Locale: use `LocaleContextHolder`
+
+- Versioning REST API
+  - Options: 
+    - URL Versioning - Twitter: /v1/person, /v2/person
+    - Request Params Versioning - Amazon: /person?version=1, /person?version=2
+    - Header Versioning - Microsoft: X-API-VERSION=1
+    - MediaType Versioning - Github - aka Content Negotiation - Accept Header
+      - same URL, produces=application/vnd/company.app-v1+json
+      - same URL, produces=application/vnd/company.app-v2+json
+  - Factors to consider
+    - URI Pollution, Misuse of HTTP Headers, Caching, Can use on the browser?, API Documentation -> No Perfect Solution
+      
 ## Chrome extension
 - Talend API tester

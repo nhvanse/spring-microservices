@@ -1,0 +1,43 @@
+### By URL
+###
+GET {{HOST}}:{{PORT}}/v1/person
+Accept: application/json
+
+###
+GET {{HOST}}:{{PORT}}/v1/person
+Accept: application/xml
+
+###
+GET {{HOST}}:{{PORT}}/v2/person
+
+###
+GET {{HOST}}:{{PORT}}/v2/person
+Accept: application/xml
+
+
+### By Request Params
+###
+GET {{HOST}}:{{PORT}}/person?version=1
+
+###
+GET {{HOST}}:{{PORT}}/person?version=2
+
+
+### By Request Header
+###
+GET {{HOST}}:{{PORT}}/person/header
+X-CUSTOM-API-VERSION: 1
+
+###
+GET {{HOST}}:{{PORT}}/person/header
+X-CUSTOM-API-VERSION: 2
+
+
+### By Accept Header
+###
+GET {{HOST}}:{{PORT}}/person/accept
+Accept: application/vnd.company.app-v1+json
+
+###
+GET {{HOST}}:{{PORT}}/person/accept
+Accept: application/vnd.company.app-v2+json
