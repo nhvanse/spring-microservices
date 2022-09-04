@@ -5,3 +5,7 @@ GET {{HOST}}:{{PORT}}/hello-world-bean
 
 ###
 GET {{HOST}}:{{PORT}}/hello-world/path-variable/Van
+
+### Internationalization - i18n
+GET {{HOST}}:{{PORT}}/hello-world_internationalized
+Accept-Language: hu

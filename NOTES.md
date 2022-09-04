@@ -35,6 +35,9 @@
   - Example: XML or JSON, English or Vietnamese
   - Example: XML use dependency `jackson-dataformat-xml`
 
-
+- Internationalization - i18n
+  - Accept-Language in Header
+  - use `org.springframework.context.MessageSource`
+  - to get Locale: use `LocaleContextHolder`
 ## Chrome extension
 - Talend API tester
