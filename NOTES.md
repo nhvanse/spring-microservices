@@ -50,6 +50,24 @@
       - same URL, produces=application/vnd/company.app-v2+json
   - Factors to consider
     - URI Pollution, Misuse of HTTP Headers, Caching, Can use on the browser?, API Documentation -> No Perfect Solution
-      
+
+- HATEOAS
+  - abbreviation of 'Hypermedia as the Engine of Application State'
+  - How to enhance API to perform subsequent actions?
+    - Option 1: Custom format and implementation
+    - Option 2: Use Standard Implementation
+      - **HAL** (JSON Hypertext Application Language)
+      - HATEOAS generate HAL for API
+  - `spring-boot-starter-hateoas`
+  <details>
+  <summary>Example</summary>
+  
+  ```
+    EntityModel<User> entityModel = EntityModel.of(user);
+    WebMvcLinkBuilder link = WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass()).findAllUsers());
+    entityModel.add(link.withRel("all-users"));
+  ```
+  </details>
+  
 ## Chrome extension
 - Talend API tester
