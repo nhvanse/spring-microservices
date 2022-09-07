@@ -74,6 +74,8 @@
   - 2. Return only selected fields
     - Static Filtering: @JsonIgnoreProperties @JsonIgnore
     - Dynamic Filtering: @JsonFilter with FilterProvider
+      - if we use @JsonFilter, we need to configure FilterProvider. 
+      - If not, an InvalidDefinitionException occurs
   
 ## Chrome extension
 - Talend API tester
