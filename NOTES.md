@@ -68,6 +68,12 @@
     entityModel.add(link.withRel("all-users"));
   ```
   </details>
+
+- Customize API Response
+  - 1. Customize field name - @JSONProperty
+  - 2. Return only selected fields
+    - Static Filtering: @JsonIgnoreProperties @JsonIgnore
+    - Dynamic Filtering: @JsonFilter with FilterProvider
   
 ## Chrome extension
 - Talend API tester

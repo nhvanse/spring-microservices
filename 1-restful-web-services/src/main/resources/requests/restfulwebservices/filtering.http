@@ -1,0 +1,4 @@
+GET {{HOST}}:{{PORT}}/filtering
+
+###
+GET {{HOST}}:{{PORT}}/filtering-list
