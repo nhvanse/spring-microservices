@@ -3,6 +3,7 @@ package com.nhvanse.restfulwebservices.filtering;
 import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(
         value = {"field1", "field2"},
@@ -20,6 +21,7 @@ public class SomeBean {
 
     private String field4 = "field4-constant";
 
+    @JsonProperty(value = "field5_property")
     private String field5 = "field5-constant";
 
     public String getField1() {
