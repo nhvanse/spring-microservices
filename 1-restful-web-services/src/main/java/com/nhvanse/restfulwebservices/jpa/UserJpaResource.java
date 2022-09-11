@@ -1,5 +1,6 @@
 package com.nhvanse.restfulwebservices.jpa;
 
+import com.nhvanse.restfulwebservices.social.Post;
 import com.nhvanse.restfulwebservices.social.User;
 import com.nhvanse.restfulwebservices.social.exception.UserNotFoundException;
 import org.springframework.hateoas.EntityModel;
@@ -59,5 +60,16 @@ public class UserJpaResource {
     @DeleteMapping("/{id}")
     public void deleteUser(@PathVariable long id) {
         userRepository.deleteById(id);
+    }
+
+    @GetMapping("/{id}/posts")
+    public List<Post> retrievePostsForUser(@PathVariable long id) {
+        Optional<User> user = userRepository.findById(id);
+
+        if (!user.isPresent()) {
+            throw new UserNotFoundException("id:" + id);
+        }
+
+        return user.get().getPosts();
     }
 }

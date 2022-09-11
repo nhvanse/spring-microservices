@@ -20,3 +20,6 @@ DELETE {{HOST}}:{{PORT}}/jpa/users/10001
 ### Content Negotiation: XML
 GET {{HOST}}:{{PORT}}/jpa/users/10002
 Accept: application/xml
+
+###
+GET {{HOST}}:{{PORT}}/jpa/users/10002/posts

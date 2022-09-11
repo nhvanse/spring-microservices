@@ -1,11 +1,15 @@
 package com.nhvanse.restfulwebservices.social;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity(name = "user_details")
 public class User {
@@ -20,6 +24,9 @@ public class User {
     @Past(message = "Birth Date should be in the past")
     private LocalDate birthDate;
 
+    @OneToMany(mappedBy = "user")
+    @JsonIgnore
+    private List<Post> posts;
     public User(Long id, String name, LocalDate birthDate) {
         this.id = id;
         this.name = name;
@@ -61,5 +68,13 @@ public class User {
                 ", name='" + name + '\'' +
                 ", birthDate=" + birthDate +
                 '}';
+    }
+
+    public List<Post> getPosts() {
+        return posts;
+    }
+
+    public void setPosts(List<Post> posts) {
+        this.posts = posts;
     }
 }
