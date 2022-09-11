@@ -1,0 +1,22 @@
+POST {{HOST}}:{{PORT}}/jpa/users
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "user",
+  "birthDate": "1998-09-25"
+}
+
+###
+GET {{HOST}}:{{PORT}}/jpa/users
+
+###
+GET {{HOST}}:{{PORT}}/jpa/users/10001
+
+
+###
+DELETE {{HOST}}:{{PORT}}/jpa/users/10001
+
+### Content Negotiation: XML
+GET {{HOST}}:{{PORT}}/jpa/users/10002
+Accept: application/xml
