@@ -85,5 +85,9 @@
     - **metrics**
     - **mappings**
     - ...
+- Explore Rest API using HAL explorer
+  - HAL (hypertext application language)
+  - HAL explorer -> API explorer using HAL
+  - pom `spring-data-rest-hal-explorer`
 ## Chrome extension
 - Talend API tester

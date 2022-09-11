@@ -1,0 +1,4 @@
+GET {{HOST}}:{{PORT}}/explorer/index.html
+
+### try on browser
+GET http://localhost:8080/explorer/index.html#uri=/actuator
