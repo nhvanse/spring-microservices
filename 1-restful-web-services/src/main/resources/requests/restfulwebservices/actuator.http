@@ -1,0 +1,17 @@
+GET {{HOST}}:{{PORT}}/actuator
+
+###
+GET {{HOST}}:{{PORT}}/actuator/beans
+
+###
+GET {{HOST}}:{{PORT}}/actuator/env
+
+
+###
+GET {{HOST}}:{{PORT}}/actuator/health
+
+###
+GET {{HOST}}:{{PORT}}/actuator/metrics
+
+###
+GET {{HOST}}:{{PORT}}/actuator/metrics/http.server.requests

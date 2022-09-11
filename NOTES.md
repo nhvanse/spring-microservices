@@ -77,5 +77,13 @@
       - if we use @JsonFilter, we need to configure FilterProvider. 
       - If not, an InvalidDefinitionException occurs
   
+- Spring Boot Actuator
+  - monitor and manage application in production
+  - endpoints:
+    - **bean**: list beans in app
+    - **health**: health info
+    - **metrics**
+    - **mappings**
+    - ...
 ## Chrome extension
 - Talend API tester
