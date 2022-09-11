@@ -89,5 +89,8 @@
   - HAL (hypertext application language)
   - HAL explorer -> API explorer using HAL
   - pom `spring-data-rest-hal-explorer`
+
+- JPA
+  - init sql: `spring.jpa.defer-datasource-initialization=true`
 ## Chrome extension
 - Talend API tester
