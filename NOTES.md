@@ -92,5 +92,9 @@
 
 - JPA
   - init sql: `spring.jpa.defer-datasource-initialization=true`
+
+- MySQL
+  - use docker run mysql on local [run_mysql_on_docker.sh](./1-restful-web-services/src/main/resources/scripts/run_mysql_on_docker.sh)
+  - 
 ## Chrome extension
 - Talend API tester
