@@ -1,0 +1,9 @@
+GET {{HOST}}:{{PORT}}/jpa/users
+# 401
+
+###
+GET {{HOST}}:{{PORT}}/jpa/users
+Authorization: Basic dXNlcjoxMjM0NTY3OA==
+# Authorization: Basic base64(user:password)
+
+###
