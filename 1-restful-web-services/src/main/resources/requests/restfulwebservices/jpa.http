@@ -23,3 +23,14 @@ Accept: application/xml
 
 ###
 GET {{HOST}}:{{PORT}}/jpa/users/10002/posts
+
+###
+POST {{HOST}}:{{PORT}}/jpa/users/10001/posts
+Content-Type: application/json
+
+{
+  "description" : "I want to learn Spring Cloud"
+}
+
+###
+GET {{HOST}}:{{PORT}}/jpa/users/10001/posts/1

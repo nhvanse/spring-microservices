@@ -20,8 +20,10 @@ public class UserJpaResource {
 
     private final UserRepository userRepository;
 
-    public UserJpaResource(UserRepository userRepository) {
+    private final PostRepository postRepository;
+    public UserJpaResource(UserRepository userRepository, PostRepository postRepository) {
         this.userRepository = userRepository;
+        this.postRepository = postRepository;
     }
 
     @GetMapping
@@ -71,5 +73,25 @@ public class UserJpaResource {
         }
 
         return user.get().getPosts();
+    }
+
+    @PostMapping("/{id}/posts")
+    public ResponseEntity<Object> createPostForUser(@PathVariable long id, @Valid @RequestBody Post post) {
+        Optional<User> user = userRepository.findById(id);
+
+        if (!user.isPresent()) {
+            throw new UserNotFoundException("id:" + id);
+        }
+
+        post.setUser(user.get());
+
+        Post savedPost = postRepository.save(post);
+
+        URI location = ServletUriComponentsBuilder.fromCurrentRequest()
+                .path("/{postId}")
+                .buildAndExpand(savedPost.getId())
+                .toUri();
+
+        return ResponseEntity.created(location).build();
     }
 }
