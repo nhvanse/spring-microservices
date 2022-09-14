@@ -7,3 +7,12 @@ Authorization: Basic dXNlcjoxMjM0NTY3OA==
 # Authorization: Basic base64(user:password)
 
 ###
+POST {{HOST}}:{{PORT}}/jpa/users
+Content-Type: application/json
+Authorization: Basic dXNlcjoxMjM0NTY3OA==
+
+{
+  "id": 198,
+  "name": "user security",
+  "birthDate": "1992-09-25"
+}
