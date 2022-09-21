@@ -104,5 +104,20 @@
   - Bean: SecurityFilterChain
   - ![Spring Security Filter chain](./images/spring_security_filters_chain.png)
   - ![Spring Security](images/spring_security_1.png)
+
+## 2. Microservices
+### 2.1 Introduction
+- Microservice: ![img.png](images/microservice_definition.png)
+- Microservice:
+  - REST
+  - Small well-chosen Deployable units
+  - Cloud Enabled
+- Challenges
+  - bounded context: how to divide to some microservices
+  - configuration management
+  - dynamic scale up and scale down
+  - visibility: how to find bug, need to monitor
+  - pack of cards: fault tolerance, 1 service go down -> affect others
+
 ## Chrome extension
 - Talend API tester
