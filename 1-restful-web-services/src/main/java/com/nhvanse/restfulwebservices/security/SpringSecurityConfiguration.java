@@ -10,17 +10,11 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SpringSecurityConfiguration {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        // 1. All requests should be authenticated
-        http.authorizeHttpRequests(
-                auth -> auth.anyRequest().authenticated()
-        );
-
-        // 2. If request is not authenticated, a web page is shown
-        http.httpBasic(Customizer.withDefaults());
-
-        // 3. CSRF -> POST, PUT -> to avoid 403
-        http.csrf().disable();
-
+        http.csrf().disable()
+                .authorizeHttpRequests()
+                .anyRequest().authenticated()
+                .and()
+                .httpBasic(Customizer.withDefaults());
 
         return http.build();
     }
