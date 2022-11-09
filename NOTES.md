@@ -133,11 +133,18 @@
 - contains a wide variety of projects: sc config, sc netflix, sc bus, sc foundry, sc cluster
 - [https://github.com/in28minutes/spring-microservices-v2](https://github.com/in28minutes/spring-microservices-v2)
 - [slide](./docs/Microservices-V2-presentation.pdf)
+- Ports:
+  ![Ports](./images/spring-cloud-ports.png)
 
 #### 2.2.1 Limit service
 
 - Dependencies: Spring web, dev-tools, actuator, config client
--
+- Port: 8080, 8081,...
+
+#### 2.2.2 Spring cloud config server
+
+- Dependencies: dev-tools, config server
+- Port: 8888
 
 ## Chrome extension
 
